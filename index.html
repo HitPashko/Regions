@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regions</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0%;
+            margin: 0%;
+        }
+        .page {
+            background-color:aliceblue;
+            width:92%;
+            height:92vh;
+            grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
+            grid-template-rows: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
+            justify-items: center;
+            border-radius: 15px;
+            padding:10px
+        
+        }
+        h1 {
+            font-size: 4rem;
+        }
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+       
+    </style>
+</head>
+    
+<body>
+    <div class="page" id="page0" style="display: grid; " >
+        <div class="page_title" style="grid-area: 9 / 4 / 11 / 18; " >
+            <h1>Saguenay–Lac-Saint-Jean</h1>
+        </div>
+    </div>
+    <div class="page" id="page1" style="display: none; ">
+        <div class="page_title" style="grid-area: 2 / 2 / 6 / 4;">L`emplacement (la localisation) de la région par rapport à la région de la Montréal</div>
+        <img src="Saguenay-Lac-Saint-Jean_in_Quebec.svg.png" alt="" style="grid-area: 2 / 10 / 20 / 20;">
+        <div class="page-body" style="grid-area: 6 / 5 / 19 / 9;">Le Saguenay–Lac-Saint-Jean (SLSJ) est l'une des dix-sept régions administratives du Québec, 
+        située sur la rive nord du Saint-Laurent. </div>
+        
+    </div>
+    <div class="page" id="page2" style="display: none; ">Le nom des habitants :</div>
+    <div class="page" id="page3" style="display: none; ">La population totale :</div>
+    <div class="page" id="page4" style="display: none; ">Les villes principales :</div>
+    <div class="page" id="page5" style="display: none; ">Les attractions touristiques de cette région :</div>
+    <div class="page" id="page6" style="display: none; ">Les activités culturelles à faire :</div>
+    <div class="page" id="page7" style="display: none; ">Le prix des logements :</div>
+    <div class="page" id="page8" style="display: none; ">Le coût de la vie :</div>
+    <div class="page" id="page9" style="display: none; ">Le taux de chômage :</div>
+    <div class="page" id="page10" style="display: none; ">Les perspectives d`emploi dans le domaine de :</div>
+    <div class="page" id="page11" style="display: none; ">Les services de santé :</div>
+    <div class="page" id="page12" style="display: none; ">La qualité de vie :</div>
+    <div class="page" id="page13" style="display: none; ">Le temps et les températures :</div>
+    <div class="page" id="page14" style="display: none; ">Un organisme qui offre des services aux nouveaux arrivants :</div>
+    <script>
+        window.addEventListener("load", (event) => {
+            document.getElementById("page0").addEventListener("click", (event) => {
+                document.getElementById("page0").style.display = "none"
+                document.getElementById("page1").style.display = "grid"
+            })
+            document.getElementById("page1").addEventListener("click", (event) => {
+                document.getElementById("page1").style.display = "none"
+                document.getElementById("page2").style.display = "grid"
+            })
+            document.getElementById("page2").addEventListener("click", (event) => {
+                document.getElementById("page2").style.display = "none"
+                document.getElementById("page3").style.display = "grid"
+            })
+            document.getElementById("page3").addEventListener("click", (event) => {
+                document.getElementById("page3").style.display = "none"
+                document.getElementById("page4").style.display = "grid"
+            })
+            document.getElementById("page4").addEventListener("click", (event) => {
+                document.getElementById("page4").style.display = "none"
+                document.getElementById("page5").style.display = "grid"
+            })
+            document.getElementById("page5").addEventListener("click", (event) => {
+                document.getElementById("page5").style.display = "none"
+                document.getElementById("page6").style.display = "grid"
+            })
+            document.getElementById("page6").addEventListener("click", (event) => {
+                document.getElementById("page6").style.display = "none"
+                document.getElementById("page7").style.display = "grid"
+            })
+            document.getElementById("page7").addEventListener("click", (event) => {
+                document.getElementById("page7").style.display = "none"
+                document.getElementById("page8").style.display = "grid"
+            })
+            document.getElementById("page8").addEventListener("click", (event) => {
+                document.getElementById("page8").style.display = "none"
+                document.getElementById("page9").style.display = "grid"
+            })
+            document.getElementById("page9").addEventListener("click", (event) => {
+                document.getElementById("page9").style.display = "none"
+                document.getElementById("page10").style.display = "grid"
+            })
+            document.getElementById("page10").addEventListener("click", (event) => {
+                document.getElementById("page10").style.display = "none"
+                document.getElementById("page11").style.display = "grid"
+            })
+            document.getElementById("page11").addEventListener("click", (event) => {
+                document.getElementById("page11").style.display = "none"
+                document.getElementById("page12").style.display = "grid"
+            })
+            document.getElementById("page12").addEventListener("click", (event) => {
+                document.getElementById("page12").style.display = "none"
+                document.getElementById("page13").style.display = "grid"
+            })
+            document.getElementById("page13").addEventListener("click", (event) => {
+                document.getElementById("page13").style.display = "none"
+                document.getElementById("page14").style.display = "grid"
+            })
+            document.getElementById("page14").addEventListener("click", (event) => {
+                document.getElementById("page14").style.display = "none"
+                document.getElementById("page0").style.display = "grid"
+            })
+            window.addEventListener("keydown", (e) => {
+                
+                pages = ["page0", "page1", "page2", "page3", "page4", "page5", "page6", "page7", "page8", "page9", "page10", "page11", "page12", "page13", "page14"]
+                var i = 0
+                for (i=0; i<pages.length-1; i++){
+                    if (document.getElementById(pages[i]).style.display == "grid"){
+                        console.log(i)
+                        break
+                        }
+                    
+                    }
+                console.log(i)
+                for (var j=0; j<pages.length; j++) {
+                    document.getElementById(pages[j]).style.display = "none"
+                    }
+                if (i==14){
+                    document.getElementById(pages[0]).style.display = "grid"
+                }else {document.getElementById(pages[i+1]).style.display = "grid"}
+                
+               
+                if (e.keyCode == 81 || e.keyCode == "Q") {
+                        document.getElementById("page0").style.display = "grid"
+                        document.getElementById("page1").style.display = "none"
+                        document.getElementById("page2").style.display = "none"
+                        document.getElementById("page3").style.display = "none"
+                        document.getElementById("page4").style.display = "none"
+                        document.getElementById("page5").style.display = "none"
+                        document.getElementById("page6").style.display = "none"
+                        document.getElementById("page7").style.display = "none"
+                        document.getElementById("page8").style.display = "none"
+                        document.getElementById("page9").style.display = "none"
+                        document.getElementById("page10").style.display = "none"
+                        document.getElementById("page11").style.display = "none"
+                        document.getElementById("page12").style.display = "none"
+                        document.getElementById("page13").style.display = "none"
+                        document.getElementById("page14").style.display = "none"
+
+                    }
+            })
+        });
+    </script>
+</body>
+
+</html>
