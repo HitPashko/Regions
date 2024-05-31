@@ -37,7 +37,7 @@
         .page-title {
             font-size: 3rem;
             color:rgb(126, 42, 42);
-            grid-area: 2 / 2 / 6 / 20;
+            grid-area: 2 / 2 / 4 / 20;
         }
         .page-body {
             font-size: 2rem;
@@ -125,6 +125,19 @@
     </div>
     <div class="page" id="page7" style="display: none; ">
         <div class="page-title">Le prix des logements.</div>
+        <div style="font-size:2rem; grid-area: 8 / 3 / 9 / 9;">
+            Pour loyer:
+        </div>
+        <div style="font-size:2rem; grid-area: 12 / 3 / 13 / 9;">
+            L'appartement 3 <sup>1</sup>/<sub>2</sub>: <a href="https://www.kijiji.ca/v-appartement-condo/saguenay/appartement-3-1-2/1694581882"> 1400 CAD</a>
+        </div>
+        <div style="font-size:2rem; grid-area: 8 / 13 / 9 / 19;">
+            Pour acheter:
+        </div>
+        <div style="font-size:2rem; grid-area: 12 / 13 / 13 / 19;">
+            L'appartement 3 <sup>1</sup>/<sub>2</sub>: <a href="https://www.kijiji.ca/v-condo-a-vendre/saguenay/270-000-condo-a-vendre-a-chicoutimi-chicoutimi/1694039791"> 270 000 CAD</a>
+        </div>
+
     </div>
     <div class="page" id="page8" style="display: none; ">
         <div class="page-title">Le coût de la vie.</div>
@@ -230,11 +243,13 @@
                 }else {document.getElementById(pages[i+1]).style.display = "grid"}
                 
                
-                if (e.keyCode == "q" || e.keyCode == "Q") {
-                        document.getElementById("page0").style.display = "grid"
-                        for (var i=1; i<pages.length; i++) {
-                            document.getElementById(page[i]).style.display = "none"
+                if (e.keyCode == 81 ) {
+                    console.log(e.keyCode)
+                    for (var i=0; i<pages.length; i++) {
+                            document.getElementById(pages[i]).style.display = "none"
                         }
+                    document.getElementById("page0").style.display = "grid"
+                        
                         
                         
 
