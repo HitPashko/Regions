@@ -23,6 +23,7 @@
             grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
             grid-template-rows: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
             border-radius: 15px;
+            align-items: center;
             padding:10px
         
         }
@@ -45,57 +46,64 @@
         .main-title {
             font-size: 11rem;
             color: rgba(5, 93, 141, 0.854);
+            /* align-self: center; */
+            grid-area: 8 / 2 / 11 / 20;
         }
     </style>
 </head>
     
 <body>
     <div class="page" id="page0" style="display: grid; justify-items: center;" >
-        <div class="main-title" style="grid-area: 9 / 2 / 11 / 20; " >
-            Saguenay.
+        <div class="main-title">
+            Saguenay– <br>-Lac-Saint-Jean.
         </div>
     </div>
     <div class="page" id="page1" style="display: none; ">
         <div class="page-title">L`emplacement.</div>
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Saguenay-Lac-Saint-Jean_in_Quebec.svg/langfr-1920px-Saguenay-Lac-Saint-Jean_in_Quebec.svg.png" alt="" style="grid-area: 2 / 10 / 20 / 20;">
-        <div class="page-body" style="grid-area: 6 / 3 / 19 / 9;">Le Saguenay–Lac-Saint-Jean (SLSJ) est l'une des dix-sept régions administratives du Québec, 
-            située sur la rive nord du Saint-Laurent. Sa superficie totale est de 95 761 km <sup>2</sup>. Est une ville du Québec (Canada) et métropole régionale du Saguenay–Lac-Saint-Jean.
-            La ville est située au Sud de région et au nord-est par rapport la région de la Montréal.
+        <div class="page-body" style="grid-area: 6 / 3 / 19 / 9;">La Saguenay–Lac-Saint-Jean (SLSJ) est l'une des dix-sept régions administratives du Québec, 
+            située sur la rive nord du Saint-Laurent. Sa superficie totale est de 95 761 km <sup>2</sup>. <br><br>
+            Saguenay est une ville du Québec (Canada) et métropole régionale du Saguenay–Lac-Saint-Jean.
+            La ville Saguenay est située au Sud de région et au nord-est par rapport la région de la Montréal.
         </div>
         
     </div>
     <div class="page" id="page2" style="display: none; ">
         <div class="page-title">Des habitants.</div>
-        <div  class="page-body" style="grid-area: 6 / 3 / 19 / 9;">Les habinants s'appellent respectivement Saguenéens. </div>
+        <div  class="page-body" style="grid-area: 6 / 3 / 19 / 9;">Les habinants s'appellent respectivement Saguenay-Jeannois ou Saguenay-Jeannoise. </div>
         <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9d/Chicoutimi_Saguen%C3%A9ens.svg/800px-Chicoutimi_Saguen%C3%A9ens.svg.png" alt="" style="grid-area: 2 / 10 / 20 / 20;">
         
     </div>
     <div class="page" id="page3" style="display: none; ">
         <div class="page-title">La population totale :</div>
-        <div  class="page-body" style="grid-area: 6 / 3 / 19 / 9;">La ville Saguenay compte 147 361 habitants </div>
+        <div  class="page-body" style="grid-area: 6 / 3 / 19 / 9;">La région Saguenay-Lac-Saint-Jean compte 275 552 habitants. <br> <br>
+            144 723 personnes habit à la ville Saguenay.
+         </div>
         <img src="https://elf.uqac.ca/wp-content/uploads/2016/09/Chicoutimi_vie_urbaine1.jpg" alt="" style="grid-area: 5 / 10 / 20 / 20;">
     </div>
     <div class="page" id="page4" style="display: none; ">
-        <div class="page-title">Les arrondissements.</div>
-            <div style="font-size:2rem; grid-area: 4 / 2 / 11 / 10;">La Baie. <br><img src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Ville_de_Ville_de_la_Baie.jpg" alt="la Baie" style="width:500px"></div>
-            <div style="font-size:2rem; grid-area: 13 / 4 / 20 / 12;">Jonquière. <br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Jonquiere_MontJacob.jpg/2560px-Jonquiere_MontJacob.jpg" alt="Jonquière" style="width:500px"></div>
-            <div style="font-size:2rem; grid-area: 8 / 13 / 15 / 21;">Chicoutimi. <br><img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Chicoutimi_-_Centre-ville_Est.jpg" alt="Chicoutimi" style="width:500px"></div>  
-    </div>
+        <div class="page-title">Les villes principales.</div>
+            <div style="font-size:2rem; grid-area: 4 / 9 / 8 / 13;">Saguenay. <br> <img src="https://www.crwflags.com/fotw/images/c/ca-qc-sa.gif" alt="Saguenay" style="width:250px"></div>
+            <div style="font-size:2rem; grid-area: 8 / 2 / 11 / 6;">Alma. <br><img src="https://www.fotw.info/images/c/ca-qc-al.gif" alt="Alma" style="width:250px"></div>
+            <div style="font-size:2rem; grid-area: 15 / 5 / 20 / 9;">Roberval. <br><img src="https://www.crwflags.com/Fotw/images/c/ca-qcrvl.gif" alt="Roberval" style="width:250px"></div>
+            <div style="font-size:2rem; grid-area: 15 / 14 / 20 / 18;">Saint-Félicien. <br><img src="https://www.crwflags.com/fotw/images/c/ca-qcxf1.gif" alt="Saint-Félicien" style="width:250px"></div>  
+            <div style="font-size:2rem; grid-area: 8 / 16 / 11 / 20;">Dolbeau-Mistassini. <br><img src="https://www.crwflags.com/fotw/images/c/ca-qcdmi.gif" alt="Dolbeau-Mistassini"></div>
+        </div>
     <div class="page" id="page5" style="display: none; ">
         <div class="page-title">Les attractions touristiques.</div>
-        <div style="font-size:2rem; grid-area: 12 / 4 / 20 / 12;">
+        <div style="font-size:2rem; grid-area: 13 / 4 / 20 / 10;">
             <a href="https://fr.tripadvisor.ca/Attraction_Review-g667818-d4610720-Reviews-Air_Defence_Museum-La_Baie_Saguenay_Saguenay_Lac_Saint_Jean_Region_Quebec.html" target="_blank">
                 Musée de la Défense aérienne. <br>
                 <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/6a/1b/90/des-belles-machines.jpg?w=2400&h=-1&s=1" alt="">
             </a>
         </div>
-        <div style="font-size:2rem; grid-area: 3 / 2 / 10 / 10;">
+        <div style="font-size:2rem; grid-area: 5 / 2 / 11 / 8;">
             <a href="https://fr.tripadvisor.ca/Attraction_Review-g1144652-d11804938-Reviews-Alpaga_Bersi-Saguenay_Saguenay_Lac_Saint_Jean_Region_Quebec.html" target="_blank">
                 Alpaga Bersi. <br>
                 <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/e7/af/46/les-alpagas-des-animaux.jpg?w=1000&h=-1&s=1" alt="">
             </a>
         </div>
-        <div style="font-size:2rem; grid-area: 6 / 13 / 15 / 20;">
+        <div style="font-size:2rem; grid-area: 8 / 12 / 16 / 19;">
             <a href="https://fr.tripadvisor.ca/AttractionProductReview-g667818-d25038142-BLACK_BEAR_VIEWING_AND_WALKING_AT_OUTDOOR_CTR_S_CANYON_Saguenay_Guided_Tours-La_Ba.html" target="_blank">
                 Observation de l`ours noir et balade. <br>
                 <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0f/b3/89/25.jpg" alt="">
@@ -104,19 +112,19 @@
     </div>
     <div class="page" id="page6" style="display: none; ">
         <div class="page-title">Les activités culturelles à faire.</div>
-        <div style="font-size:2rem; grid-area: 12 / 4 / 20 / 12;">
+        <div style="font-size:2rem; grid-area: 6 / 2 / 9 / 7;">
             <a href="https://fr.tripadvisor.ca/Attraction_Review-g155026-d3179082-Reviews-La_Pulperie_de_Chicoutimi_Musee_Regional-Chicoutimi_Saguenay_Saguenay_Lac_Saint_J.html" target="_blank">
-                La Pulperie de Chicoutimi / Musée régional.<br>
+                Musée régional.<br>
                 <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/99/59/cd/la-pulperie-de-chicoutimi.jpg?w=1400&h=-1&s=1" alt="">
             </a>
         </div>
-        <div style="font-size:2rem; grid-area: 3 / 2 / 10 / 10;">
+        <div style="font-size:2rem; grid-area: 8 / 12 / 16 / 19;">
             <a href="https://fr.tripadvisor.ca/Attraction_Review-g155026-d4723833-Reviews-Cathedrale_Saint_Francois_Xavier-Chicoutimi_Saguenay_Saguenay_Lac_Saint_Jean_Regi.html" target="_blank">
                 Cathedrale Saint-Francois-Xavier <br>
                 <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/22/4b/38/cathedrale-saint-francois.jpg?w=2200&h=-1&s=1" alt="">
             </a>
         </div>
-        <div style="font-size:2rem; grid-area: 6 / 13 / 15 / 20;">
+        <div style="font-size:2rem; grid-area: 13 / 4 / 20 / 10;">
             <a href="https://fr.tripadvisor.ca/Attraction_Review-g667818-d2643289-Reviews-Musee_du_Fjord-La_Baie_Saguenay_Saguenay_Lac_Saint_Jean_Region_Quebec.html" target="_blank">
                 Musée du fjord. <br>
                 <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/ca/cd/bc/exposition-historique.jpg?w=2000&h=-1&s=1" alt="">
@@ -129,21 +137,35 @@
             Pour loyer:
         </div>
         <div style="font-size:2rem; grid-area: 12 / 3 / 13 / 9;">
-            L'appartement 3 <sup>1</sup>/<sub>2</sub>: <a href="https://www.kijiji.ca/v-appartement-condo/saguenay/appartement-3-1-2/1694581882"> 1400 CAD</a>
+            L'appartement 3 <sup>1</sup>/<sub>2</sub>: <a href="https://www.kijiji.ca/v-appartement-condo/saguenay/appartement-3-1-2/1694581882" target="_blank"> 1400 CAD</a>
         </div>
         <div style="font-size:2rem; grid-area: 8 / 13 / 9 / 19;">
             Pour acheter:
         </div>
         <div style="font-size:2rem; grid-area: 12 / 13 / 13 / 19;">
-            L'appartement 3 <sup>1</sup>/<sub>2</sub>: <a href="https://www.kijiji.ca/v-condo-a-vendre/saguenay/270-000-condo-a-vendre-a-chicoutimi-chicoutimi/1694039791"> 270 000 CAD</a>
+            L'appartement 3 <sup>1</sup>/<sub>2</sub>: <a href="https://www.kijiji.ca/v-condo-a-vendre/saguenay/270-000-condo-a-vendre-a-chicoutimi-chicoutimi/1694039791" target="_blank"> 270 000 CAD</a>
         </div>
 
     </div>
     <div class="page" id="page8" style="display: none; ">
         <div class="page-title">Le coût de la vie.</div>
+        <div style="font-size:2rem; grid-area: 8 / 5 / 9 / 15;">
+            
+            Selon l`analyse de l’Institut de recherche et d’informations socioéconomiques 
+            (<a href="https://www.lequotidien.com/actualites/2023/05/03/pour-une-vie-decente-a-saguenay-il-faut-27-000-par-an-6WWBXOAERJAGLLDODFTSEHNHXE/" target="_blank">IRIS</a>), 
+            dans le cadre de son étude annuelle sur le revenu viable à Saguenay, il est possible de vivre dignement avec 27 000 $ par année.
+
+        </div>
+
     </div>
     <div class="page" id="page9" style="display: none; ">
         <div class="page-title">Le taux de chômage.</div>
+        <div style="font-size:2rem; grid-area: 8 / 5 / 9 / 15;">
+            Le taux de chômage a connu une faible hausse au Saguenay-Lac-Saint-Jean en décembre, 
+            selon les dernières données de l’Institut de la statistique du Québec (
+                <a href="https://ici.radio-canada.ca/nouvelle/2039392/emploi-sans-emploi-travail" target="_blank">ISQ</a>
+                ) il a atteint 3,9 %.
+        </div>
     </div>
     <div class="page" id="page10" style="display: none; ">
         <div class="page-title">Les perspectives d`emploi dans le domaine de </div>
