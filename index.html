@@ -20,8 +20,8 @@
             background-color:aliceblue;
             width:92%;
             height:92vh;
-            grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
-            grid-template-rows: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
+            grid-template-columns: repeat(20,minmax(0, 5%)) ;
+            grid-template-rows: repeat(20,minmax(0, 5%)) ;
             border-radius: 15px;
             align-items: center;
             padding:10px
@@ -35,31 +35,44 @@
             max-height: 100%;
             object-fit: cover;
         }
-        .picture1 {
-            heifht: 10%;
+        .picture-block {
+            display:flex;
+            flex-direction: column;
         }
-        .picture2 {
-            height:10%;
+        .p1{
+    
+            grid-area: 12 / 10 / 20 / 15;
+        }
+        .p2{
+            grid-area: 3 / 13 / 9 / 19;
+            
         }    
-        .picture3 {
-            height: 10%
+        .p3{
+       
+            grid-area: 8 / 2 / 13 / 9;
+        }
+        .picture-name {
+            font-size: 1.3em;
+        }
+        .picture {
+            max-height: 80%;
         }
         .page-title {
-            font-size: 3rem;
+            font-size: 2.5em;
             color:rgb(126, 42, 42);
-            grid-area: 2 / 2 / 4 / 20;
+            grid-area: 1 / 2 / 3 / 20;
         }
         .page-body {
-            font-size: 2rem;
+            font-size: 1.7rem;
         }
         .main-title {
-            font-size: 11rem;
+            font-size: 8em;
             color: rgba(5, 93, 141, 0.854);
             /* align-self: center; */
-            grid-area: 8 / 2 / 11 / 20;
+            grid-area: 1 / 2 / 21 / 20;
         }
         #left-arrow {
-            width:2rem;
+            width:2em;
             position: fixed;
             top: 92%;
             left: 37%;
@@ -68,7 +81,7 @@
             cursor:pointer;
         }
         #right-arrow {
-            width:2rem;
+            width:2em;
             position: fixed;
             top: 92%;
             left: 60%
@@ -87,8 +100,8 @@
     </div>
     <div class="page" id="page1" style="display: none; ">
         <div class="page-title">L`emplacement.</div>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Saguenay-Lac-Saint-Jean_in_Quebec.svg/langfr-1920px-Saguenay-Lac-Saint-Jean_in_Quebec.svg.png" alt="" style="grid-area: 2 / 10 / 20 / 20;">
-        <div class="page-body" style="grid-area: 6 / 3 / 19 / 9;">La Saguenay–Lac-Saint-Jean (SLSJ) est l'une des dix-sept régions administratives du Québec, 
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Saguenay-Lac-Saint-Jean_in_Quebec.svg/langfr-1920px-Saguenay-Lac-Saint-Jean_in_Quebec.svg.png" alt="" style="grid-area: 2 / 11 / 20 / 20;">
+        <div class="page-body" style="grid-area: 6 / 2 / 19 / 10;">La Saguenay–Lac-Saint-Jean (SLSJ) est l'une des dix-sept régions administratives du Québec, 
             située sur la rive nord du Saint-Laurent. Sa superficie totale est de 95 761 km <sup>2</sup>. <br><br>
             Saguenay est une ville du Québec (Canada) et métropole régionale du Saguenay–Lac-Saint-Jean.
             La ville Saguenay est située au Sud de région et au nord-est par rapport la région de la Montréal.
@@ -118,44 +131,48 @@
     </div>
     <div class="page" id="page5" style="display: none; ">
         <div class="page-title">Les attractions touristiques.</div>
-        <div style="font-size:2rem; grid-area: 13 / 4 / 20 / 10;">
-            <a href="https://fr.tripadvisor.ca/Attraction_Review-g667818-d4610720-Reviews-Air_Defence_Museum-La_Baie_Saguenay_Saguenay_Lac_Saint_Jean_Region_Quebec.html" target="_blank">
-                Musée de la Défense aérienne. <br>
-                <img class="picture1" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/6a/1b/90/des-belles-machines.jpg?w=2400&h=-1&s=1" alt="">
-            </a>
+        <div class="picture-block p1">
+            <a class="picture-name" href="https://fr.tripadvisor.ca/Attraction_Review-g667818-d4610720-Reviews-Air_Defence_Museum-La_Baie_Saguenay_Saguenay_Lac_Saint_Jean_Region_Quebec.html" target="_blank">
+                    Musée de la Défense aérienne. <br>
+                </a>
+            <a><img  class="picture" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/6a/1b/90/des-belles-machines.jpg?w=2400&h=-1&s=1" alt=""></a>
         </div>
-        <div style="font-size:2rem; grid-area: 5 / 2 / 11 / 8;">
-            <a href="https://fr.tripadvisor.ca/Attraction_Review-g1144652-d11804938-Reviews-Alpaga_Bersi-Saguenay_Saguenay_Lac_Saint_Jean_Region_Quebec.html" target="_blank">
-                Alpaga Bersi. <br>
-                <img class="picture2"src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/e7/af/46/les-alpagas-des-animaux.jpg?w=1000&h=-1&s=1" alt="">
-            </a>
-        </div>
-        <div style="font-size:2rem; grid-area: 8 / 12 / 16 / 19;">
-            <a href="https://fr.tripadvisor.ca/AttractionProductReview-g667818-d25038142-BLACK_BEAR_VIEWING_AND_WALKING_AT_OUTDOOR_CTR_S_CANYON_Saguenay_Guided_Tours-La_Ba.html" target="_blank">
-                Observation de l`ours noir et balade. <br>
-                <img class="picture3"src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0f/b3/89/25.jpg" alt="">
-            </a>
-        </div>
+        <div class="picture-block p2">
+            <a class="picture-name"  href="https://fr.tripadvisor.ca/Attraction_Review-g1144652-d11804938-Reviews-Alpaga_Bersi-Saguenay_Saguenay_Lac_Saint_Jean_Region_Quebec.html" target="_blank">
+                    Alpaga Bersi. <br>
+                </a>
+            <a><img  class="picture"src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/e7/af/46/les-alpagas-des-animaux.jpg?w=1000&h=-1&s=1" alt=""></a>
+        </div>    
+        <div class="picture-block p3">
+            <a class="picture-name"  href="https://fr.tripadvisor.ca/AttractionProductReview-g667818-d25038142-BLACK_BEAR_VIEWING_AND_WALKING_AT_OUTDOOR_CTR_S_CANYON_Saguenay_Guided_Tours-La_Ba.html" target="_blank">
+                    Observation de l`ours noir et balade. <br>
+                </a>
+            <a class="picture"><img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0f/b3/89/25.jpg" alt=""></a> 
+        </div>    
+        
     </div>
     <div class="page" id="page6" style="display: none; ">
         <div class="page-title">Les activités culturelles à faire.</div>
-        <div style="font-size:2rem; grid-area: 6 / 2 / 9 / 7;">
-            <a href="https://fr.tripadvisor.ca/Attraction_Review-g155026-d3179082-Reviews-La_Pulperie_de_Chicoutimi_Musee_Regional-Chicoutimi_Saguenay_Saguenay_Lac_Saint_J.html" target="_blank">
+        <div class="picture-block p1">
+            <a class="picture-name"  href="https://fr.tripadvisor.ca/Attraction_Review-g155026-d3179082-Reviews-La_Pulperie_de_Chicoutimi_Musee_Regional-Chicoutimi_Saguenay_Saguenay_Lac_Saint_J.html" target="_blank">
                 Musée régional.<br>
-                <img class="picture1" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/99/59/cd/la-pulperie-de-chicoutimi.jpg?w=1400&h=-1&s=1" alt="">
-            </a>
+                </a>
+            <a><img class="picture" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/99/59/cd/la-pulperie-de-chicoutimi.jpg?w=1400&h=-1&s=1" alt=""></a>
+            
         </div>
-        <div style="font-size:2rem; grid-area: 8 / 12 / 16 / 19;">
-            <a href="https://fr.tripadvisor.ca/Attraction_Review-g155026-d4723833-Reviews-Cathedrale_Saint_Francois_Xavier-Chicoutimi_Saguenay_Saguenay_Lac_Saint_Jean_Regi.html" target="_blank">
+        <div class="picture-block p3">
+            <a class="picture-name"  href="https://fr.tripadvisor.ca/Attraction_Review-g155026-d4723833-Reviews-Cathedrale_Saint_Francois_Xavier-Chicoutimi_Saguenay_Saguenay_Lac_Saint_Jean_Regi.html" target="_blank">
                 Cathedrale Saint-Francois-Xavier <br>
-                <img class="picture2 "src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/22/4b/38/cathedrale-saint-francois.jpg?w=2200&h=-1&s=1" alt="">
-            </a>
+                </a>
+            <a><img class="picture"src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/22/4b/38/cathedrale-saint-francois.jpg?w=2200&h=-1&s=1" alt=""></a>
+            
         </div>
-        <div style="font-size:2rem; grid-area: 13 / 4 / 20 / 10;">
-            <a href="https://fr.tripadvisor.ca/Attraction_Review-g667818-d2643289-Reviews-Musee_du_Fjord-La_Baie_Saguenay_Saguenay_Lac_Saint_Jean_Region_Quebec.html" target="_blank">
+        <div class="picture-block p2">
+            <a class="picture-name"  href="https://fr.tripadvisor.ca/Attraction_Review-g667818-d2643289-Reviews-Musee_du_Fjord-La_Baie_Saguenay_Saguenay_Lac_Saint_Jean_Region_Quebec.html" target="_blank">
                 Musée du fjord. <br>
-                <img class="picture3" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/ca/cd/bc/exposition-historique.jpg?w=2000&h=-1&s=1" alt="">
-            </a>
+                </a>
+            <a><img class="picture" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/ca/cd/bc/exposition-historique.jpg?w=2000&h=-1&s=1" alt=""></a> 
+            
         </div>
     </div>
     <div class="page" id="page7" style="display: none; ">
@@ -176,7 +193,7 @@
     </div>
     <div class="page" id="page8" style="display: none; ">
         <div class="page-title">Le coût de la vie.</div>
-        <div style="font-size:2rem; grid-area: 8 / 5 / 9 / 15;">
+        <div style="grid-area: 8 / 5 / 9 / 18;" class="page-body">
             
             Selon l`analyse de l’Institut de recherche et d’informations socioéconomiques 
             (<a href="https://www.lequotidien.com/actualites/2023/05/03/pour-une-vie-decente-a-saguenay-il-faut-27-000-par-an-6WWBXOAERJAGLLDODFTSEHNHXE/" target="_blank">IRIS</a>), 
@@ -187,7 +204,7 @@
     </div>
     <div class="page" id="page9" style="display: none; ">
         <div class="page-title">Le taux de chômage.</div>
-        <div style="font-size:2rem; grid-area: 8 / 5 / 9 / 15;">
+        <div style="grid-area: 8 / 5 / 9 / 18;" class="page-body">
             Le taux de chômage a connu une faible hausse au Saguenay-Lac-Saint-Jean en décembre, 
             selon les dernières données de l’Institut de la statistique du Québec (
                 <a href="https://ici.radio-canada.ca/nouvelle/2039392/emploi-sans-emploi-travail" target="_blank">ISQ</a>
@@ -196,7 +213,7 @@
     </div>
     <div class="page" id="page10" style="display: none; ">
         <div class="page-title">Les perspectives d`emploi.</div>
-        <div style="font-size:2rem; grid-area: 6 / 3 / 12 / 10;">
+        <div style="grid-area: 3 / 2 / 20 / 10;" class="page-body">
             De toutes les régions du Québec, le Saguenay–Lac-Saint-Jean est 
             celle qui compte le plus grand nombre de travailleuses et de 
             travailleurs dans le secteur de la foresterie. <br> <br>
@@ -204,7 +221,7 @@
             et on y retrouve de plus en plus d’entreprises œuvrant dans des 
             secteurs émergents comme les nouvelles technologies. 
         </div>
-        <div style="font-size:2rem; grid-area: 10 / 12 / 16 / 19;">
+        <div style="grid-area: 3 / 11 / 20 / 20;" class="page-body">
             Métiers et professions qui offrent de bonnes possibilités d’emploi : <br>
             <ul>
                 <li>Éducateurs/éducatrices de la petite enfance (CNP 4214 et 4413) </li>
@@ -216,7 +233,7 @@
     </div>
     <div class="page" id="page11" style="display: none; ">
         <div class="page-title">Les services de santé.</div>
-        <div style="font-size:2rem; grid-area: 8 / 5 / 18 / 15;">
+        <div style="font-size:2rem; grid-area: 8 / 3 / 18 / 19;">
             Le Centre intégré universitaire de santé et de services sociaux (
                 <a href="https://santesaglac.gouv.qc.ca/soins-et-services/" target="_blank">
                     CIUSSS</a>) 
@@ -230,7 +247,7 @@
     </div>
     <div class="page" id="page12" style="display: none; ">
         <div class="page-title">La qualité de vie.</div>
-        <div style="font-size:2rem; grid-area: 8 / 5 / 18 / 15;">
+        <div style="font-size:2rem; grid-area: 8 / 4 / 18 / 17;">
             Les habitants du <a href="https://legrandsaguenaylacsaintjean.com/top-10-des-raisons-pour-setablir-au-saguenay-lac-saint-jean/" target="_blank">
                 Saguenay–Lac-Saint-Jean</a> sont reconnus comme bons vivants.
              Ils sont faciles d’approche et accueillants. Ils savent comment recevoir, 
@@ -252,8 +269,8 @@
         </div>
     </div>
     <div class="page" id="page14" style="display: none; ">
-        <div class="page-title">Un organisme qui offre des services aux nouveaux arrivants.</div>
-        <div style="font-size:2rem; grid-area: 8 / 5 / 17 / 15;">
+        <div class="page-title">Un organisme offré des services aux nouveaux arrivants.</div>
+        <div style="font-size:2rem; grid-area: 4 / 4 / 18 / 18;">
             Service d’accueil pour nouveaux arrivants (<a href="https://mailchi.mp/adcd22784072/sanasaguenaylefjord" target="_blank">SANA </a>) Saguenay-Le Fjord :
             Créé à l’initiative de la Ville de Saguenay, de la MRC du Fjord-du-Saguenay et Promotion Saguenay, le SANA Saguenay-Le Fjord offre aux nouveaux arrivants un accompagnement à 360º, à chaque étape de leur installation. Il s’adresse également aux entreprises et aux établissements d’enseignement de la région qui souhaitent mieux accueillir travailleurs et étudiants étrangers.
         </div>
