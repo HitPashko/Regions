@@ -181,7 +181,7 @@
             Pour loyer:
         </div>
         <div style="font-size:2rem; grid-area: 12 / 3 / 13 / 9;">
-            L'appartement 3 <sup>1</sup>/<sub>2</sub>: <a href="https://www.kijiji.ca/v-appartement-condo/saguenay/3-1-2-a-louer/1694981876" target="_blank"> 900 CAD</a>
+            L'appartement 3 <sup>1</sup>/<sub>2</sub>: <a href="https://www.kijiji.ca/v-appartement-condo/saguenay/appartement-3-1-2/1694581882" target="_blank"> 1400 CAD</a>
         </div>
         <div style="font-size:2rem; grid-area: 8 / 13 / 9 / 19;">
             Pour acheter:
@@ -221,7 +221,7 @@
              
             Selon les dernières données de l’Institut de la statistique du Québec (
                 <a href="https://ici.radio-canada.ca/nouvelle/2039392/emploi-sans-emploi-travail" target="_blank">ISQ</a>
-                ) le taux de chômage atteint 2,3 %.
+                ) le taux de chômage a atteint 2,3 %.
         </div>
     </div>
     <div class="page" id="page10" style="display: none; ">
@@ -246,8 +246,8 @@
     </div>
     <div class="page" id="page11" style="display: none; ">
         <div class="page-title">Les services de santé.</div>
-        <div style="font-size:2rem; grid-area: 6 / 3 / 18 / 19;">
-            Le Centre intégré universitaire de santé et de services sociaux (
+        <div style="font-size:2rem; grid-area: 6 / 4 / 18 / 19;">
+            <!-- Le Centre intégré universitaire de santé et de services sociaux (
                 <a href="https://santesaglac.gouv.qc.ca/soins-et-services/" target="_blank">
                     CIUSSS</a>) 
             du Saguenay−Lac-Saint-Jean a pour mission de veiller à la santé et au bien-être de 
@@ -256,7 +256,8 @@
             développement des savoirs et des pratiques, de même qu’au transfert et à la diffusion des 
             connaissances. Le CIUSSS du Saguenay−Lac-Saint-Jean regroupe 62 installations réparties sur 
             un territoire de 95 762 km 2 . <br>
-            
+             -->
+             <a href="https://santesaglac.gouv.qc.ca/trouver-un-point-de-service/" target="_blank"><img src="Screenshot 2024-06-10 at 1.13.28 PM.png" alt=""></a>
         </div>
     </div>
     <div class="page" id="page12" style="display: none; ">
@@ -312,17 +313,10 @@
     </div>
     <script>
         window.addEventListener("load", (event) => {
+            
+
             window.addEventListener("keydown", (e) => {
-                pages = ["page0", "page1", "page2", "page3", "page4", "page5", "page6",
-                         "page7", "page8", "page15", "page9", "page10", "page11", "page12", "page13", "page14"]
-                // var i = 0
-                // for (i=0; i<pages.length-1; i++){
-                //     if (document.getElementById(pages[i]).style.display == "grid"){ console.log(i)
-                //          break}
-                //     }
-                // console.log(i)
-                // for (var j=0; j<pages.length; j++) {document.getElementById(pages[j]).style.display = "none"}
-                // if (i==14){document.getElementById(pages[0]).style.display = "grid" }else {document.getElementById(pages[i+1]).style.display = "grid"}
+                
                 console.log(e.keyCode)
                 if (e.keyCode == 81 ) {
                     for (var i=0; i<pages.length; i++) {document.getElementById(pages[i]).style.display = "none" }
